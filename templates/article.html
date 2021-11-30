@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Description">
+    <meta name="author" content="Author">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Tepetl</title>
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Sansita:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/fontawesome-all.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/swiper.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/simplebar.min.css') }}" />
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/lightgallery.min.css') }}" />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/theme.min.css') }}">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="../static/css/images/favicon.png">
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Rose</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-text page-scroll" href="index">Tepetl</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Predicción del modelo para el volcan</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <p style="font-size: 24px;">De acuerdo con los datos de los sensores sismicos el modelo predice que la siguiente actividad volcanica sera en: </p>
+                    {% if dias and horas and minutos and segundos %}
+                    <h1>{{dias}} días, {{horas}} horas, {{minutos}} minutos y {{segundos}} segundos</h1>
+                    {%endif %}
+                    <p style="font-size: 24px;">Por favor toma las medidas necesarias para salvaguardar la integridad de los habitantes</p>
+                    <p>Recuerda que esta predicción es parte de un proyecto escolar y no se debe de tomar como una realidad absoluta.</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-fluid mt-5 mb-3" src="../static/css/images/Volcano2.jpg"
+                        alt="alternative">
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+
+    <!-- Footer -->
+    <div class="footer-decoration bg-gray">
+        <svg class="footer-frame" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            viewBox="0 0 1920 200">
+            <defs>
+                <style>
+                    .cls-frame-1,
+                    .cls-frame-2,
+                    .cls-frame-3,
+                    .cls-frame-4 {
+                        fill: #950101;
+                    }
+
+                    .cls-frame-1 {
+                        opacity: 0.1;
+                    }
+
+                    .cls-frame-2 {
+                        opacity: 0.22;
+                    }
+
+                    .cls-frame-3 {
+                        opacity: 0.16;
+                    }
+                </style>
+            </defs>
+            <title>footer-frame</title>
+            <path class="cls-frame-1"
+                d="M0,19.824S94.869-5.228,208,4.061C373.224,17.627,473.914,61.173,573.11,76.875,714.1,99.194,919.592,92.924,919.592,92.924L966.09,202H0Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-frame-2"
+                d="M0,149.525S169.63,98.689,354.121,68.133,726.1,23.025,873.095,21.57,1171.58,17.2,1393.569,36.121,1920,133.66,1920,133.66l0,68.34H0V149.525Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-frame-3"
+                d="M902.912,202S1252.576,80.034,1323.072,58.207s183.168-42.462,280.486-51.42C1743.051-6.052,1920,20.814,1920,20.814L1920,202H902.912Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-frame-4"
+                d="M0,49.323s225.322,64.933,394.624,75.227C535,133.085,627,125.046,726,112.7c82.888-10.337,155.627-31.195,263.741-55.618,135.934-30.708,239.987-48.165,355.83-50.06,124.494-2.037,219.35,4.192,335.429,27.089,131.427,25.925,239,60.819,239,60.819L1920,202H0Z"
+                transform="translate(0 -1.995)" />
+        </svg>
+    </div> <!-- end of footer-decoration -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Equipo 5 <a href="#your-link">Ciencias cognitivas</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
+    <script src="{{ url_for('static',filename='js/jquery.easing.min.js') }}"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{ url_for('static',filename='js/jquery.countdown.min.js') }}"></script>
+    <!-- The Final Countdown plugin for jQuery -->
+    <script src="{{ url_for('static',filename='js/swiper.min.js') }}"></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="{{ url_for('static',filename='js/jquery.magnific-popup.js') }}"></script>
+    <!-- Magnific Popup for lightboxes -->
+    <script src="{{ url_for('static',filename='js/scripts.js') }}"></script> <!-- Custom scripts -->
+</body>
+
+</html>

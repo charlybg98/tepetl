@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Description">
+    <meta name="author" content="Author">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Tepetl</title>
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Sansita:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/bootstrap.css') }}"rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/fontawesome-all.css') }}"rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/swiper.css') }}"rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/simplebar.min.css') }}" />
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/lightgallery.min.css') }}" />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="{{ url_for('static',filename='css/theme.min.css') }}">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="../static/css/images/favicon.png">
+</head>
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+    <!-- Page loading spinner-->
+    <div class="cs-page-loading active">
+        <div class="cs-page-loading-inner">
+            <div class="cs-page-spinner"></div><span>Cargando...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Rose</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-text page-scroll" href="index">Tepetl</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--<div class="countdown">
+                        <span id="clock"></span>
+                    </div>-->
+                    <h1 class="h1-large">¿Qué pasaría si los científicos pudieran anticipar erupciones volcánicas como
+                        predicen el clima?</h1>
+                    <p class="p-large"></p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <svg class="header-decoration" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            viewBox="0 0 1920 200">
+            <defs>
+                <style>
+                    .cls-1,
+                    .cls-2,
+                    .cls-3,
+                    .cls-4 {
+                        fill: white;
+                    }
+
+                    .cls-1 {
+                        opacity: 0.1;
+                    }
+
+                    .cls-2 {
+                        opacity: 0.22;
+                    }
+
+                    .cls-3 {
+                        opacity: 0.16;
+                    }
+                </style>
+            </defs>
+            <title>header-decoration</title>
+            <path class="cls-1"
+                d="M0,19.824S94.869-5.228,208,4.061C373.224,17.627,473.914,61.173,573.11,76.875,714.1,99.194,919.592,92.924,919.592,92.924L966.09,202H0Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-2"
+                d="M0,149.525S169.63,98.689,354.121,68.133,726.1,23.025,873.095,21.57,1171.58,17.2,1393.569,36.121,1920,133.66,1920,133.66l0,68.34H0V149.525Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-3"
+                d="M902.912,202S1252.576,80.034,1323.072,58.207s183.168-42.462,280.486-51.42C1743.051-6.052,1920,20.814,1920,20.814L1920,202H902.912Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-4"
+                d="M0,49.323s225.322,64.933,394.624,75.227C535,133.085,627,125.046,726,112.7c82.888-10.337,155.627-31.195,263.741-55.618,135.934-30.708,239.987-48.165,355.83-50.06,124.494-2.037,219.35,4.192,335.429,27.089,131.427,25.925,239,60.819,239,60.819L1920,202H0Z"
+                transform="translate(0 -1.995)" />
+        </svg>
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Description -->
+    <div class="slider-1" style="padding-bottom: 8%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <a class="popup-link" href="../static/css/images/description-slide-1.jpg">
+                                            <img class="img-fluid" src="../static/css/images/description-slide-1.jpg"
+                                                alt="alternative">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <a class="popup-link" href="../static/css/images/description-slide-2.jpg">
+                                            <img class="img-fluid" src="../static/css/images/description-slide-2.jpg"
+                                                alt="alternative">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <a class="popup-link" href="../static/css/images/description-slide-3.jpg">
+                                            <img class="img-fluid" src="../static/css/images/description-slide-3.jpg"
+                                                alt="alternative">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2><span class="red">La detección temprana</span> salva vidas</h2>
+                        <p>
+                            Solo una erupción imprevista puede resultar en decenas de miles de vidas perdidas.
+                            Si los científicos pudieran predecir de manera confiable cuándo un volcán entrará en
+                            erupción,
+                            las evacuaciones podrían ser más oportunas y el daño mitigado.
+                        </p>
+                        <p> <a
+                                class="red page-scroll" href="#registration"></a></p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of description -->
+
+    <!-- Volcano map -->
+    <div id="agenda" class="basic-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading"><span class="red">Volcanes</span> Activos</h2>
+                    <p class="p-heading"></p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <!-- begin VolcanoWidget -->
+            <div id="VW_bigMap" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:999999;">
+                <div id="VW_backDiv"
+                    style="background:#000;filter:alpha(opacity=80);opacity:.8;height:100%;width:100%;position:absolute;top:0px;left:0px;z-index:-1;"
+                    onclick="switchFrame('VW_smallMap','VW_bigMap','enlarge','small map','100%','500px',0,-180);return false;">
+                </div>
+            </div>
+            <div id="VW_smallMap" style="clear:left">
+                <div id="VW_mCont" style="width:100%;height:500px;position:relative;margin:0;background:#fff;"><a
+                        name="VW_mCont"></a>
+                    <div
+                        style="position:absolute;top:8px;right:28px;height:15px;text-align:right;vertical-align:middle;font:12px Verdana,sans-serif;font-weight:bold">
+                        [<a href="#" style="color:#bb202a"
+                            onclick="switchFrame('VW_smallMap','VW_bigMap','enlarge','small map','100%','500px',0,-180);return false;"><span
+                                id="VW_mSwitch">enlarge</span></a>]</div><iframe id="VW_iframe" width="100%"
+                        height="100%" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"
+                        src="https://earthquakes.volcanodiscovery.com?L=8&terrain=1&hideQuakes=1"></iframe>
+                </div>
+            </div>
+            <script
+                type="text/javascript">function switchFrame(a, b, c, d, e, f, g, h) { var i = document.getElementById("VW_mCont"); var j = document.getElementById("VW_mSwitch").firstChild; if (j.nodeValue == c) { j.nodeValue = d } else { j.nodeValue = c } var k = i.parentNode.getAttribute("id"); if (k == a) { var l = b } else { var l = a } var m = i.parentNode; var n = document.getElementById(l); n.appendChild(i); m.style.display = "none"; n.style.display = ""; if (l == a) { i.style.width = e; i.style.height = f; i.style.margin = 0; i.style.top = "" } else { i.style.width = "80%"; i.style.height = "80%"; i.style.margin = "auto"; i.style.top = "20px" } window.location.hash = "VW_mCont" }</script>
+            <!-- end VolcanoWidget / http://www.volcano-news.com/active-volcanoes-map/get-widget.html -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of volcano map -->
+
+    <!-- Highlights -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading" style="margin-bottom: 5rem"><span class="red">Prevenir</span> Salva Vidas
+                    </h2>
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Comunicación activa</h4>
+                            <p>Una comunicación rapida sobre una situación de riesgo salva miles de vidas</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Uso de herramientas de ultima generación</h4>
+                            <p>Con el uso de modelos de aprendizaje automatico se pueden predecir de mejor manera los fenomenos naturalez, como las erupciones volcanicas</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Mantenimiento y mejora</h4>
+                            <p>Seguir entrenando y mejorando los modelos con mejores y más datos nos acerca a herramientas que nos permitan salvar miles de vidas</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of highlights -->
+
+
+    <!-- Form-->
+    <section class="jarallax bg-gradient pt-5 pb-7 pt-md-7" data-jarallax data-speed="0.25"><span
+            class="bg-overlay bg-gradient" style="opacity: .8;"></span>
+        <div class="jarallax-img" style="background-image: url(../static/css/images//Volcano2.jpg);"></div>
+        <div class="cs-shape cs-shape-bottom cs-shape-slant bg-body">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 260">
+                <polygon fill="currentColor" points="0,257 0,260 3000,260 3000,0"></polygon>
+            </svg>
+        </div>
+        <div class="container bg-overlay-content pt-3 pb-7 pt-md-0">
+            <div class="row justify-content-center pb-7">
+                <div class="col-lg-10">
+                    <h1 class="text-light">Vamos a predecir la próxima explosión volcánica</h1>
+                    <p class="text-light">Sube un archivo con las lecturas de los sensores sismicos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact form + details-->
+    <section class="container bg-overlay-content pb-5" style="margin-bottom: 5rem;">
+        <div class="row">
+            <div class="col-lg-6 col-md-7 offset-lg-1 pb-2 mb-5" style="margin-top: -260px;">
+                <div class="card border-0 box-shadow-lg">
+                    <form action = "/modelo" method = "POST" enctype = "multipart/form-data">
+                        <div class="form-group" style="margin-top: 1.5rem; margin-bottom:0rem;">
+                            <label class="form-label" for="cont-fn">Archivo<sup class="text-danger ml-1">*</sup></label>
+                            <input class="form-control" type="file" name = "file" id="file" required>
+                        </div>
+                        <div class="text-center pt-2">
+                            <button class="btn btn-primary" type="submit" style="margin-bottom: 1.5rem;">¡Vamos a predecir!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 offset-md-1">
+                <h2 class="h2 pb-3">Aviso</h2>
+                <h3 class="h4 pb-2">Esta herramienta es una proyecto escolar y bajo ninguna circunstancia se debe de utilizar para ninguna predicción real</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div class="footer-decoration bg-gray">
+        <svg class="footer-frame" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            viewBox="0 0 1920 200">
+            <defs>
+                <style>
+                    .cls-frame-1,
+                    .cls-frame-2,
+                    .cls-frame-3,
+                    .cls-frame-4 {
+                        fill: #950101;
+                    }
+
+                    .cls-frame-1 {
+                        opacity: 0.1;
+                    }
+
+                    .cls-frame-2 {
+                        opacity: 0.22;
+                    }
+
+                    .cls-frame-3 {
+                        opacity: 0.16;
+                    }
+                </style>
+            </defs>
+            <title>footer-frame</title>
+            <path class="cls-frame-1"
+                d="M0,19.824S94.869-5.228,208,4.061C373.224,17.627,473.914,61.173,573.11,76.875,714.1,99.194,919.592,92.924,919.592,92.924L966.09,202H0Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-frame-2"
+                d="M0,149.525S169.63,98.689,354.121,68.133,726.1,23.025,873.095,21.57,1171.58,17.2,1393.569,36.121,1920,133.66,1920,133.66l0,68.34H0V149.525Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-frame-3"
+                d="M902.912,202S1252.576,80.034,1323.072,58.207s183.168-42.462,280.486-51.42C1743.051-6.052,1920,20.814,1920,20.814L1920,202H902.912Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-frame-4"
+                d="M0,49.323s225.322,64.933,394.624,75.227C535,133.085,627,125.046,726,112.7c82.888-10.337,155.627-31.195,263.741-55.618,135.934-30.708,239.987-48.165,355.83-50.06,124.494-2.037,219.35,4.192,335.429,27.089,131.427,25.925,239,60.819,239,60.819L1920,202H0Z"
+                transform="translate(0 -1.995)" />
+        </svg>
+    </div> <!-- end of footer-decoration -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Equipo 5 <a href="#your-link">Ciencias cognitivas</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
+    <script src="{{ url_for('static',filename='js/jquery.easing.min.js') }}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{ url_for('static',filename='js/jquery.countdown.min.js') }}"></script> <!-- The Final Countdown plugin for jQuery -->
+    <script src="{{ url_for('static',filename='js/swiper.min.js') }}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{{ url_for('static',filename='js/jquery.magnific-popup.js') }}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{{ url_for('static',filename='js/scripts.js') }}"></script> <!-- Custom scripts -->
+</body>
+
+</html>
